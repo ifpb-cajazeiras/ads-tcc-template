@@ -1,0 +1,18 @@
+%
+% Documento: Lista de códigos
+%
+
+\newcommand{\algoritmoname}{Algoritimo}
+\renewcommand{\listalgorithmcfname}{Lista de códigos}
+
+\floatname{algocf}{\algoritmoname}
+\newlistof{listofalgoritmos}{loa}{\listalgoritmoname}
+\newlistentry{algocf}{loa}{0}
+
+\counterwithout{algocf}{chapter}
+\renewcommand{\cftalgocfname}{\algoritmoname\space}
+\renewcommand*{\cftalgocfaftersnum}{\hfill--\hfill}
+
+\pdfbookmark[0]{\listalgorithmcfname}{loa}
+\listofalgorithms
+\cleardoublepage
